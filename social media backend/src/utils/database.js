@@ -19,11 +19,7 @@ let pool;
 const initializePool = () => {
 	if (!pool) {
 		pool = new Pool({
-			host: "localhost",
-			port: 5432,
-			database: "social_media_db",
-			user: "postgres",
-			password: "20031211",
+			connectionString: process.env.DATABASE_URL,
 			max: 20,
 			idleTimeoutMillis: 30000,
 			connectionTimeoutMillis: 2000,
