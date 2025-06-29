@@ -20,7 +20,7 @@ let pool;
 const initializePool = () => {
 	if (!pool) {
 		pool = new Pool({
-			connectionString: process.env.DATABASE_URL,
+			connectionString: 'postgresql://randomdb_781m_user:oBEsRBvJ9Dq9V8t2R8OVGRY62rDrV7BP@dpg-d1gfaqali9vc73aj8400-a/randomdb_781m',
 			max: 20,
 			idleTimeoutMillis: 30000,
 			connectionTimeoutMillis: 2000,
